@@ -15,55 +15,38 @@
 
 <!--Slideshow-->
 <style>
-    body {
-      margin: 0;
-      padding: 0;
-    }
-
     .slideshow-container {
-      max-width: 600px;
-      position: relative;
-      margin: auto;
-      overflow: hidden;
-    }
+    max-width: 800px;
+    position: relative;
+    margin: auto;
+  }
 
-    .slide {
-      display: none;
-    }
+  .slide {
+    display: none;
+  }
 
-    .slide img {
-      width: 100%;
-      height: auto;
-    }
+  .slide img {
+    width: 100%;
+    height: auto;
+  }
 
-    .fade {
-      animation-name: fade;
-      animation-duration: 3s;
-      animation-timing-function: ease-in-out;
-      animation-iteration-count: infinite;
-    }
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+  }
 
-    @keyframes fade {
-      0% { opacity: 0; }
-      20% { opacity: 1; }
-      33% { opacity: 1; }
-      53% { opacity: 0; }
-      100% { opacity: 0; }
-    }
+  .prev {
+    left: 0;
+  }
 
-    .button-container {
-      text-align: center;
-    }
-
-    .button {
-      display: inline-block;
-      background-color: #4CAF50;
-      color: white;
-      padding: 10px 20px;
-      margin-top: 10px;
-      border: none;
-      cursor: pointer;
-    }
+  .next {
+    right: 0;
+  }
   </style>
 
     <meta charset="utf-8">
@@ -354,129 +337,58 @@ cb=googleTranslateElementInit">
             </div>
         </div>
         <div class="slideshow-container">
-            <div class="slide fade">
-              <img src="img/courses-1.jpg" alt="Image 1">
-            </div>
-        
-            <div class="slide fade">
-              <img src="img/courses-2.jpg" alt="Image 2">
-            </div>
-        
-            <div class="slide fade">
-              <img src="img/courses-3.jpg" alt="Image 3">
-            </div>
-        
-            <div class="slide fade">
-              <img src="img/courses-4.jpg" alt="Image 4">
-            </div>
-            <div class="slide fade">
-                <img src="img/courses-5.jpg" alt="Image 4">
-            </div>
-
-            <div class="slide fade">
-                <img src="img/courses-6.jpg" alt="Image 4">
-            </div>
-          </div>
-
-          <div class="button-container">
-            <button class="button" onclick="prevSlide()">Previous</button>
-            <button class="button" onclick="nextSlide()">Next</button>
-          </div>
+  <div class="slide">
+    <img src="img/courses-1.jpg" alt="Image 1">
+  </div>
+  <div class="slide">
+    <img src="img/courses-2.jpg" alt="Image 2">
+  </div>
+  <div class="slide">
+    <img src="img/courses-3.jpg" alt="Image 3">
+  </div>
+  <div class="slide">
+    <img src="img/courses-4.jpg" alt="Image 3">
+  </div>
+  <div class="slide">
+    <img src="img/courses-5.jpg" alt="Image 3">
+  </div>
+  <div class="slide">
+    <img src="img/courses-6.jpg" alt="Image 3">
+  </div>
+</div>
+    <div class="prev" onclick="prevSlide()">&#10094; Previous</div>
+<div class="next" onclick="nextSlide()">Next &#10095;
+</div>
 
           <script>
-            let slideIndex = 1;
-            showSlides(slideIndex);
-        
-            function showSlides(index) {
-              const slides = document.getElementsByClassName("slide");
-              if (index > slides.length) {
-                slideIndex = 1;
-              }
-              if (index < 1) {
-                slideIndex = slides.length;
-              }
-              for (let i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-              }
-              slides[slideIndex - 1].style.display = "block";
-            }
-        
-            function prevSlide() {
-              showSlides(slideIndex -= 1);
-            }
-        
-            function nextSlide() {
-              showSlides(slideIndex += 1);
-            }
+            let slideIndex = 0;
+  showSlide(slideIndex);
+
+  function showSlide(index) {
+    const slides = document.querySelectorAll('.slide');
+    
+    if (index < 0) {
+      index = slides.length - 1;
+    } else if (index >= slides.length) {
+      index = 0;
+    }
+    
+    for (let i = 0; i < slides.length; i++) {
+      slides[i].style.display = 'none';
+    }
+    
+    slides[index].style.display = 'block';
+    slideIndex = index;
+  }
+
+  function prevSlide() {
+    showSlide(slideIndex - 1);
+  }
+
+  function nextSlide() {
+    showSlide(slideIndex + 1);
+  }
           </script>
-        <!--<div class="owl-carousel courses-carousel">
-            <div class="courses-item position-relative">
-                <img class="img-fluid" src="img/courses-1.jpg" alt="">
-                <div class="courses-text">
-                       <div class="border-top w-100 mt-3">
-                        <div class="d-flex justify-content-between p-4">
-                            </div>
-                    </div>
-                    <div class="w-100 bg-white text-center p-4" >
-                          </div>
-                </div>
-            </div>
-            <div class="courses-item position-relative">
-                <img class="img-fluid" src="img/courses-2.jpg" alt="">
-                <div class="courses-text">
-                      <div class="border-top w-100 mt-3">
-                        <div class="d-flex justify-content-between p-4">
-                        </div>
-                    </div>
-                    <div class="w-100 bg-white text-center p-4" >
-                     </div>
-                </div>
-            </div>
-            <div class="courses-item position-relative">
-                <img class="img-fluid" src="img/courses-3.jpg" alt="">
-                <div class="courses-text">
-                    <div class="border-top w-100 mt-3">
-                        <div class="d-flex justify-content-between p-4">
-                        </div>
-                    </div>
-                    <div class="w-100 bg-white text-center p-4" >
-                    </div>
-                </div>
-            </div>
-            <div class="courses-item position-relative">
-                <img class="img-fluid" src="img/courses-4.jpg" alt="">
-                <div class="courses-text">
-                    <div class="border-top w-100 mt-3">
-                        <div class="d-flex justify-content-between p-4">
-                            </div>
-                    </div>
-                    <div class="w-100 bg-white text-center p-4" >
-                        </div>
-                </div>
-            </div>
-            <div class="courses-item position-relative">
-                <img class="img-fluid" src="img/courses-5.jpg" alt="">
-                <div class="courses-text">
-                    <div class="border-top w-100 mt-3">
-                        <div class="d-flex justify-content-between p-4">
-                            </div>
-                    </div>
-                    <div class="w-100 bg-white text-center p-4" >
-                        </div>
-                </div>
-            </div>
-            <div class="courses-item position-relative">
-                <img class="img-fluid" src="img/courses-6.jpg" alt="">
-                <div class="courses-text">
-                    <div class="border-top w-100 mt-3">
-                        <div class="d-flex justify-content-between p-4">
-                        </div>
-                    </div>
-                    <div class="w-100 bg-white text-center p-4" >
-                    </div>
-                </div>
-            </div>
-        </div>-->
           <br><br<<br><br><br>
         <div class="section-title text-center position-relative mb-4">
             <h1 class="display-4">Donations Details</h1>
