@@ -95,7 +95,7 @@ cb=googleTranslateElementInit">
         <div class="row py-2 px-lg-5">
             <div class="col-lg-6 text-center text-lg-left mb-2 mb-lg-0">
                 <div class="d-inline-flex align-items-center text-white">
-                    <small><i class="fa fa-phone-alt mr-2"></i>+9923871215</small>
+                    <small><i class="fa fa-phone-alt mr-2"></i>9923871215</small>
                     <small class="px-3">|</small>
                     <small><i class="fa fa-envelope mr-2"></i>sssspmandal2013@gmail.com</small>
                 </div>
@@ -134,12 +134,18 @@ cb=googleTranslateElementInit">
             </button>
             <div class="collapse navbar-collapse justify-content-between px-lg-3" id="navbarCollapse">
                 <div class="navbar-nav mx-auto py-0">
-                    <a href="index.html" class="nav-item nav-link active">Home</a>
-                    <a href="index.html" class="nav-item nav-link">Appeal</a>
-                    <a href="index.html" class="nav-item nav-link">Downloads</a>
-                    <a href="index.html" class="nav-item nav-link">Work in Progress</a>
-                    <a href="index.html" class="nav-item nav-link">Gallery</a>
-                    <a href="index.html" class="nav-item nav-link">Contact</a>
+                    <!--<nav>
+                        <ul>
+                          <li><a href="#appeal">Appeal</a></li>
+                          <li><a href="#section2">Section 2</a></li>
+                          Add more links as needed
+                        </ul>
+                      </nav>-->
+                    <a href="#appeal" class="nav-item nav-link">Appeal</a>
+                    <a href="#downloads" class="nav-item nav-link">Downloads</a>
+                    <a href="#work" class="nav-item nav-link">Work in Progress</a>
+                    <a href="#gallery" class="nav-item nav-link">Gallery</a>
+                    <a href="#contact" class="nav-item nav-link">Contact</a>
                 </div>
                 <a href="" class="btn btn-primary py-2 px-4 d-none d-lg-block">Join Us</a>
             </div>
@@ -155,7 +161,7 @@ cb=googleTranslateElementInit">
             <div class="row">
                 <div class="col-lg-5 mb-5 mb-lg-0" style="min-height: 500px;">
                     <!--<div class="position-relative h-100">
-                        <img class="position-absolute w-100 h-100" src="img/about.jpg" style="object-fit: cover;">
+                        <img class="position-absolute w-100 h-100" src="img/about.jpg" style="object-fit: cover;" id="about-img">
                     </div>-->
                     <div class="image-container">
                         <img src="img/about.jpg" alt="Image">
@@ -196,6 +202,7 @@ cb=googleTranslateElementInit">
 
 
     <!-- Feature Start -->
+    <section id="appeal">
     <div class="container-fluid bg-image" style="margin: 90px 0;">
         <div class="container">
             <div class="row">
@@ -242,8 +249,10 @@ cb=googleTranslateElementInit">
             </div>
         </div>
     </div>
-   
+</section>
+
  <!-- pdf Start -->
+ <section id="downloads">
  <div class="section-title position-relative mb-4">
     <h1 class="display-4">Downloads</h1>
 </div>
@@ -325,12 +334,16 @@ cb=googleTranslateElementInit">
               </div>
         </div>
       </div>
+    </section>
 <!--pdf section end-->
 
     <!-- Courses Start -->
    <!-- <div class="container-fluid px-0 py-5">
         <div class="row mx-0 justify-content-center pt-5">
-            <div class="col-lg-6">-->
+            <div class="col-lg-6">--><br>
+                <br>
+                <br>
+                <section id="work">
                 <div class="section-title text-center position-relative mb-4">
                     <h1 class="display-4">Work in Progress</h1>
                 </div>
@@ -356,7 +369,8 @@ cb=googleTranslateElementInit">
     <img src="img/courses-6.jpg" alt="Image 3">
   </div>
 </div>
-    <div class="prev" onclick="prevSlide()">&#10094; Previous</div>
+
+<div class="prev" onclick="prevSlide()">&#10094; Previous</div>
 <div class="next" onclick="nextSlide()">Next &#10095;
 </div>
 
@@ -389,10 +403,12 @@ cb=googleTranslateElementInit">
     showSlide(slideIndex + 1);
   }
           </script>
+        </section>
+       
           <br><br<<br><br><br>
         <div class="section-title text-center position-relative mb-4">
             <h1 class="display-4">Donations Details</h1>
-           <b> A/c Name : SHRI SANT SAVATAMALI SHIKSHAN PRASARAK MANDAL
+          <b>  A/c Name : SHRI SANT SAVATAMALI SHIKSHAN PRASARAK MANDAL
         <br>
         Bank Name: IDBI BANK Branch : Gojubavi
         <br> A/c No : 1460104000000596
@@ -405,10 +421,11 @@ cb=googleTranslateElementInit">
         <br>
         <!-- sssspmandal2013@gmail.com -->
         Email : <a href="mailto:sssspmandal2013@gmail.com">sssspmandal2013@gmail.com</a>
-        </b>
+    </b>
         </div>                
 
     <!-- Team Start -->
+    <section id="gallery">
     <div class="container-fluid py-5">
         <div class="container py-5">
             <div class="section-title text-center position-relative mb-5">
@@ -442,6 +459,7 @@ cb=googleTranslateElementInit">
             </div>
         </div>
     </div>
+</section>
     <!-- Team End -->
 
 
@@ -473,14 +491,14 @@ cb=googleTranslateElementInit">
             </div>
         </div>
     </div>
-        <h1 class="display-4">Board of Trustees</h1><br><b>
-                                    Mr. Nandkumar Baburao Phule - Working President<br>
+        <h1 class="display-4">Board of Trustees</h1><br>
+                                   <b> Mr. Nandkumar Baburao Phule - Working President<br>
                                     Mr. Rahul Ramchandra Jadhav - President<br>
-                                    Mr. Machhindra Ramchandra Jadhav - Secretary<br>
-                                    Mr. Govind Sopan Lokhande - Treasurer<br>
+                                    Mr. Machhindra Ramchandra Jadhav-Secretary<br>
+                                    Mr. Govind Sopan Lokhande Treasurer<br>
                                     Mrs. Irawati Mohan Satav - Assistant Treasurer<br>
                                     Mr. - Dattu Manik Kadam - Member<br>
-                                    Mrs. Ashwini Machhindra Jadhav-Member  </b>
+                                    Mrs. Ashwini Machhindra Jadhav-Member</b>
 
 
     <!-- Contact Start -->
