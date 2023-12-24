@@ -1,659 +1,243 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
-    <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Shree Sant Savtamali Shikshan Prasarak Mandal</title>
+    <style>
         
-        ga('create', 'UA-XXXXX-Y', 'auto');
-        ga('send', 'pageview');
-        </script>
+    </style>
+    <!-- Move the favicon link inside the head section -->
+    <link href="favicon.jpg" rel="icon" type="image/x-icon">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="script.js"></script>
 
-<!--Slideshow-->
-<style>
-    .slideshow-container {
-    max-width: 800px;
-    position: relative;
-    margin: auto;
-  }
-
-  .slide {
-    display: none;
-  }
-
-  .slide img {
-    width: 100%;
-    height: auto;
-  }
-
-  .prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    padding: 10px;
-    font-size: 20px;
-    font-weight: bold;
-  }
-
-  .prev {
-    left: 0;
-  }
-
-  .next {
-    right: 0;
-  }
-  </style>
-
-    <meta charset="utf-8">
-    <title>Shree Sant Savta Mali Shikshan Prasarak Mandal</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="Free HTML Templates" name="keywords">
-    <meta content="Free HTML Templates" name="description">
-
-    
-
-    <!-- Favicon -->
-    <link href="img/favicon.jpg" rel="icon">
-    <!--<link rel="icon" href="favicon.jpg" type="image/jpg">-->
-
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"> 
-
-    <!-- Font Awesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-
-    <!-- Libraries Stylesheet -->
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
 </head>
-
 <body>
-    <!--Google Translator-->
-    <div id="google_translate_element"></div>
-                            <script type="text/javascript">
-                                function googleTranslateElementInit() {
-                                    new google.translate.TranslateElement(
-                                        { pageLanguage: 'en' },
-                                        'google_translate_element'
-                                    );
-                                }
-                            </script>
-                            <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?
-cb=googleTranslateElementInit">
-</script>
+    <header style="display: flex; align-items: center;">
+        <img src="img/favicon.jpg" alt="School Logo" style="width: 100px; height: 100px; margin-right: 10px;">
+        <h1 style="text-align: center;">Shree Sant Savtamali Shikshan Prasarak Mandal</h1>
+    </header>
+    
 
-    <!-- Topbar Start -->
-    <div class="container-fluid bg-dark">
-        <div class="row py-2 px-lg-5">
-            <div class="col-lg-6 text-center text-lg-left mb-2 mb-lg-0">
-                <div class="d-inline-flex align-items-center text-white">
-                    <small><i class="fa fa-phone-alt mr-2"></i>9923871215</small>
-                    <small class="px-3">|</small>
-                    <small><i class="fa fa-envelope mr-2"></i>sssspmandal2013@gmail.com</small>
-                </div>
-            </div>
-            <div class="col-lg-6 text-center text-lg-right">
-                <div class="d-inline-flex align-items-center">
-                    <a class="text-white px-2" href="">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
-                    <a class="text-white px-2" href="">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                    <a class="text-white px-2" href="">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                    <a class="text-white px-2" href="">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <a class="text-white pl-2" href="">
-                        <i class="fab fa-youtube"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Topbar End -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#appeal">Appeal</a>
+        <a href="#downloads">Downloads</a>
+        <a href="#gallery">Gallery</a> <!-- Fix the typo here -->
+        <a href="#contact">Contact</a>
+    </nav>
 
-
-    <!-- Navbar Start -->
-    <div class="container-fluid p-0">
-        <nav class="navbar navbar-expand-lg bg-white navbar-light py-3 py-lg-0 px-lg-5">
-            <!--<a href="index.html" class="navbar-brand ml-lg-3">-->
-                <img src="img/favicon.jpg" style="width:200px;height: 170px;">
-            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-between px-lg-3" id="navbarCollapse">
-                <div class="navbar-nav mx-auto py-0">
-                    <!--<nav>
-                        <ul>
-                          <li><a href="#appeal">Appeal</a></li>
-                          <li><a href="#section2">Section 2</a></li>
-                          Add more links as needed
-                        </ul>
-                      </nav>-->
-                    <a href="index.html" class="nav-item nav-link active">Home</a>
-                    <a href="#appeal" class="nav-item nav-link">Appeal</a>
-                    <a href="#downloads" class="nav-item nav-link">Downloads</a>
-                    <a href="#work" class="nav-item nav-link">Work in Progress</a>
-                    <a href="#gallery" class="nav-item nav-link">Gallery</a>
-                    <a href="#contact" class="nav-item nav-link">Contact</a>
-                </div>
-                <a href="" class="btn btn-primary py-2 px-4 d-none d-lg-block">Join Us</a>
-            </div>
-        </nav>
-    </div>
-    <!-- Navbar End -->
-
-
-
-    <!-- About Start -->
-    <div class="container-fluid py-5">
-        <div class="container py-5">
-            <div class="row">
-                <div class="col-lg-5 mb-5 mb-lg-0" style="min-height: 500px;">
-                    <!--<div class="position-relative h-100">
-                        <img class="position-absolute w-100 h-100" src="img/about.jpg" style="object-fit: cover;" id="about-img">
-                    </div>-->
-                    <div class="image-container">
-                        <img src="img/about.jpg" alt="Image">
-                    </div>
-                </div>
-                <div class="col-lg-7">
-                    <div class="section-title position-relative mb-4">
-                        <h3 class="display-4">Shree Sant Savta Mali Shikshan Prasarak Mandal</h3>
-                    </div>
-                    <b>मतिमंद मुलांचे निवाशी पुनर्वसन केंद्र, गोजुबावी ता.बारामती, जि.पुणे </b><br>
-                                                        Join us with  Shree Sant Savta Mali Shikshan Prasarak Mandal's
-                                                        journey of compassion and education as we work together to
-                                                        create a brighter future for these special children, allowing
-                                                        them to discover their talents, passions, and dreams while
-                                                        providing them with a sense of love and belonging. Together, we
-                                                        can make a positive difference in the lives of mentally
-                                                        challenged and orphaned students, helping them grow into
-                                                        resilient, empowered, and fulfilled individuals.
-                                                        <br> <div class="row pt-3 mx-0">
-                        <div class="col-3 px-0">
-                            
-                        </div>
-                        <div class="col-3 px-0">
-                           
-                        </div>
-                        <div class="col-3 px-0">
-                            
-                        </div>
-                        <div class="col-3 px-0">
-                            
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <section id="home" style="display: flex; align-items: start; ">
+        <img src="img/about.jpg" alt="Welcome Image" style="width: 50%; max-height: 500px; margin-right: 30px;">
+        <div style="width: 50%; max-width: 400px;"> <!-- Adjust the max-width based on your preference -->
+            <h2>Welcome to Shree Sant Savtamali Shikshan Prasarak Mandal</h2>
+            <p><b>मतिमंद मुलांचे निवाशी पुनर्वसन केंद्र, गोजुबावी ता.बारामती, जि.पुणे </b><br>
+                Join us with  Shree Sant Savta Mali Shikshan Prasarak Mandal's
+                journey of compassion and education as we work together to
+                create a brighter future for these special children, allowing
+                them to discover their talents, passions, and dreams while
+                providing them with a sense of love and belonging. Together, we
+                can make a positive difference in the lives of mentally
+                challenged and orphaned students, helping them grow into
+                resilient, empowered, and fulfilled individuals.
+            </p>
+            <!-- Add more content as needed -->
         </div>
-    </div>
-    <!-- About End -->
-
-
-    <!-- Feature Start -->
-    <section id="appeal">
-    <div class="container-fluid bg-image" style="margin: 90px 0;">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-7 my-5 pt-5 pb-lg-5">
-                    <div class="section-title position-relative mb-4">
-                        <h1 class="display-4">Appeal</h1>
-                    </div>
-                   <b> Dear brothers and sisters,
-                    Hello, Sasneh.
-                    Shri Sant Sawata Mali Shikshan Prasaran Mandal, Gojubavi, Ta. Baramati, Dist.
-                    Pune:The organisation wants to set up a rehabilitation centre for the mentally
-                    retarded and orphans among the differently-abled in Baramati taluka. There are
-                    around 150 adult mentally retarded persons in Baramati taluka. There are around
-                    360 adult mentally retarded persons in Indapur, Daund and Purandar talukas. But
-                    there are no rehabilitation centres for their future.For this, our organization
-                    intends to rehabilitate them through agriculture projects and various other
-                    types of training. The farm project aims to plant all kinds of fruit trees on 4
-                    acres and rehabilitate the children in the following: Children will be given
-                    music therapy, exercise therapy, conversation therapy, swimming, running,
-                    pranayama and meditation, as well as other artifacts.Through this, the
-                    organization strives to bring about a cultural change in these differently-abled
-                    children and empower them. In our part, M. Income. D. C. There are many
-                    companies. There are also various industrial and NGOs in the taluka. The
-                    organization intends to rehabilitate these able-bodied children by providing
-                    them with work. However, i request donors like you to participate in this
-                    virtuous act and cooperate successfully!</b>
-                    <br><br><div class="d-flex mb-3">
-                       <div class="mt-n1">
-                            </div>
-                    </div>
-                    <div class="d-flex mb-3">
-                         <div class="mt-n1">
-                            </div>
-                    </div>
-                    <div class="d-flex">
-                        <div class="mt-n1">
-                         </div>
-                    </div>
-                </div>
-                <div class="col-lg-5" style="min-height: 500px;">
-                    <div class="position-relative h-100">
-                        </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
- <!-- pdf Start -->
- <section id="downloads">
- <div class="section-title position-relative mb-4">
-    <h1 class="display-4">Downloads</h1>
-</div>
-    <div class="row">
-        <div class="col-sm-6">
-          <div class="card">
-            <div class="card-body">
-              <h2 class="card-title">View Trust Proposal</h2>
-              <a class="header-btn btn small colorful hover-dark" target="_blank"
-              rel="noreferrer noopener"
-              href="css/Shri santh sawtamali trust proposal.pdf">View
-              PDF</a>                                                </div>
-          </div>
-        </div>
-        <div class="col-sm-6">
-            <div class="card">
-                <div class="card-body">
-                  <h2 class="card-title">Savtamali Trust Pan </h2>
-                  <a class="header-btn btn small colorful hover-dark" target="_blank"
-                  rel="noreferrer noopener"
-                  href="css/savtamali trust pan.pdf">View
-                  PDF</a>                                                </div>
-              </div>
-        </div>
-        <br>
-        <div class="col-sm-6">
-            <div class="card">
-                <div class="card-body">
-                  <h2 class="card-title">Shree Sant Savtamali F.Certificate</h2>
-                  <a class="header-btn btn small colorful hover-dark" target="_blank"
-                  rel="noreferrer noopener"
-                  href="css/sri..santh sawtamali F.Certificat.pdf">View
-                  PDF</a>                                                </div>
-              </div>
-        </div>
-        
-        <div class="col-sm-6">
-            <div class="card">
-                <div class="card-body">
-                  <h2 class="card-title">Shree Sant Savtamali M.Certificate</h2>
-                  <a class="header-btn btn small colorful hover-dark" target="_blank"
-                  rel="noreferrer noopener"
-                  href="css/Sri.santh sawtamali M Certificat.pdf">View
-                  PDF</a>                                                </div>
-              </div>
-        </div>
-        <br>
-        <div class="col-sm-6">
-            <div class="card">
-                <div class="card-body">
-                  <h2 class="card-title">Trust Deed in Marathi</h2>
-                  <a class="header-btn btn small colorful hover-dark" target="_blank"
-                  rel="noreferrer noopener"
-                  href="css/Trust Deed in Marathi.pdf">View
-                  PDF</a>                                                </div>
-              </div>
-        </div>
-        
-        <div class="col-sm-6">
-            <div class="card">
-                <div class="card-body">
-                  <h2 class="card-title">12A</h2>
-                  <a class="header-btn btn small colorful hover-dark" target="_blank"
-                  rel="noreferrer noopener"
-                  href="css/12A.pdf">View
-                  PDF</a>                                                </div>
-              </div>
-        </div>
-        <br>
-        
-        <div class="col-sm-6">
-            <div class="card">
-                <div class="card-body">
-                  <h2 class="card-title">80G</h2>
-                  <a class="header-btn btn small colorful hover-dark" target="_blank"
-                  rel="noreferrer noopener"
-                  href="css/80G.pdf">View
-                  PDF</a>                                                </div>
-              </div>
-        </div>
-      </div>
     </section>
-<!--pdf section end-->
-
-    <!-- Courses Start -->
-   <!-- <div class="container-fluid px-0 py-5">
-        <div class="row mx-0 justify-content-center pt-5">
-            <div class="col-lg-6">--><br>
-                <br>
-                <br>
-                <section id="work">
-                <div class="section-title text-center position-relative mb-4">
-                    <h1 class="display-4">Work in Progress</h1>
-                </div>
-            </div>
-        </div>
-        <div class="slideshow-container">
-  <div class="slide">
-    <img src="img/courses-1.jpg" alt="Image 1">
-  </div>
-  <div class="slide">
-    <img src="img/courses-2.jpg" alt="Image 2">
-  </div>
-  <div class="slide">
-    <img src="img/courses-3.jpg" alt="Image 3">
-  </div>
-  <div class="slide">
-    <img src="img/courses-4.jpg" alt="Image 3">
-  </div>
-  <div class="slide">
-    <img src="img/courses-5.jpg" alt="Image 3">
-  </div>
-  <div class="slide">
-    <img src="img/courses-6.jpg" alt="Image 3">
-  </div>
-</div>
-
-<div class="prev" onclick="prevSlide()">&#10094; Previous</div>
-<div class="next" onclick="nextSlide()">Next &#10095;
-</div>
-
-          <script>
-            let slideIndex = 0;
-  showSlide(slideIndex);
-
-  function showSlide(index) {
-    const slides = document.querySelectorAll('.slide');
     
-    if (index < 0) {
-      index = slides.length - 1;
-    } else if (index >= slides.length) {
-      index = 0;
-    }
     
-    for (let i = 0; i < slides.length; i++) {
-      slides[i].style.display = 'none';
-    }
     
-    slides[index].style.display = 'block';
-    slideIndex = index;
-  }
 
-  function prevSlide() {
-    showSlide(slideIndex - 1);
-  }
-
-  function nextSlide() {
-    showSlide(slideIndex + 1);
-  }
-          </script>
-        </section>
-       
-          <br><br<<br><br><br>
-        <div class="section-title text-center position-relative mb-4">
-            <h1 class="display-4">Donations Details</h1>
-          <b>  A/c Name : SHRI SANT SAVATAMALI SHIKSHAN PRASARAK MANDAL
-        <br>
-        Bank Name: IDBI BANK Branch : Gojubavi
-        <br> A/c No : 1460104000000596
-        <br> IFSC Code: IBKL0001460
-        <br> PAN No. : AAOTS1415P
-        <br> Contact : I. <a href="tel:9923871215">9923871215</a>
-        II. <a href="tel:9764375101">9764375101</a>
-        III. <a href="tel:9359504003">9359504003</a>
-        <!-- 9923871215 / 9764375101 / 9359504003 -->
-        <br>
-        <!-- sssspmandal2013@gmail.com -->
-        Email : <a href="mailto:sssspmandal2013@gmail.com">sssspmandal2013@gmail.com</a>
-    </b>
-        </div>                
-
-    <!-- Team Start -->
-    <section id="gallery">
-    <div class="container-fluid py-5">
-        <div class="container py-5">
-            <div class="section-title text-center position-relative mb-5">
-                <h1 class="display-4">Gallary</h1>
-            </div>
-            <div class="owl-carousel team-carousel position-relative" style="padding: 0 30px;">
-                <div class="team-item">
-                    <img class="img-fluid w-100" src="img/1.jpeg" alt="">
-                    <div class="bg-light text-center p-4">
-                        <div class="d-flex justify-content-center">
-                            </div>
-                    </div>
-                </div>
-                <div class="team-item">
-                    <img class="img-fluid w-100" src="img/2.jpeg" alt="">
-                    <div class="bg-light text-center p-4">
-                        <div class="d-flex justify-content-center">
-                        </div>
-                    </div>
-                </div>
-                <div class="team-item">
-                    <img class="img-fluid w-100" src="img/3.jpeg" alt="">
-                    <div class="bg-light text-center p-4">
-                        <div class="d-flex justify-content-center">
-                        </div>
-                    </div>
-                </div>
-                <div class="team-item">
-                    <img class="img-fluid w-100" src="img/4.jpeg" alt="">
-                   <div class="bg-light text-center p-4">
-                        <div class="d-flex justify-content-center">
-                        </div>
-                    </div>
-                </div>
-                <div class="team-item">
-                    <img class="img-fluid w-100" src="img/5.jpeg" alt="">
-                   <div class="bg-light text-center p-4">
-                        <div class="d-flex justify-content-center">
-                        </div>
-                    </div>
-                </div><div class="team-item">
-                    <img class="img-fluid w-100" src="img/6.jpeg" alt="">
-                   <div class="bg-light text-center p-4">
-                        <div class="d-flex justify-content-center">
-                        </div>
-                    </div>
-                </div><div class="team-item">
-                    <img class="img-fluid w-100" src="img/7.jpeg" alt="">
-                   <div class="bg-light text-center p-4">
-                        <div class="d-flex justify-content-center">
-                        </div>
-                    </div>
-                </div><div class="team-item">
-                    <img class="img-fluid w-100" src="img/8.jpeg" alt="">
-                   <div class="bg-light text-center p-4">
-                        <div class="d-flex justify-content-center">
-                        </div>
-                    </div>
-                </div><div class="team-item">
-                    <img class="img-fluid w-100" src="img/9.jpeg" alt="">
-                   <div class="bg-light text-center p-4">
-                        <div class="d-flex justify-content-center">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-    <!-- Team End -->
-
-
-    <!-- Testimonial Start -->
-    <div class="container-fluid bg-image py-5" style="margin: 90px 0;">
-        <div class="container py-5">
-            <div class="row align-items-center">
-                <div class="col-lg-5 mb-5 mb-lg-0">
-                    <div class="section-title position-relative mb-4">
-                        <h1 class="display-4">Mission</h1>
-                    </div>
-                    <p>Mental retardation among persons with disabilities is a serious problem in society
-                                    In many forms of disability, mental retardation is such that other divyangs can
-                                    overcome the power of intelligence by standing on their own feet. A mentally
-                                    retarded person, however, is a very serious problem in the family.
-                                    It is a bad subject in society, due to the lack of gift of intelligence to the
-                                    mentally retarded person, he has to be taken care of by someone till the end, due to
-                                    which many problems arise in the family, especially after the parents, the big
-                                    question is who should take care of them. In order to solve the problems of the
-                                    mentally retarded person and to rehabilitate the mentally retarded person, efforts
-                                    are being made to inculcate values through rehabilitation of mentally retarded
-                                    persons in Gojubavi, Taluka - Baramati District-Pune.
-                                    Rehabilitative work is carried out in music therapy, occupational therapy,
-                                    conversation therapy, etc. in the rehabilitation center for the mentally retarded
-                                    persons.
-                                </p>
-                    </div>
-                
-            </div>
-        </div>
-    </div>
-        <h1 class="display-4">Board of Trustees</h1><br>
-                                   <b> Mr. Nandkumar Baburao Phule - Working President<br>
-                                    Mr. Rahul Ramchandra Jadhav - President<br>
-                                    Mr. Machhindra Ramchandra Jadhav-Secretary<br>
-                                    Mr. Govind Sopan Lokhande Treasurer<br>
-                                    Mrs. Irawati Mohan Satav - Assistant Treasurer<br>
-                                    Mr. - Dattu Manik Kadam - Member<br>
-                                    Mrs. Ashwini Machhindra Jadhav-Member</b>
-
-
-    <!-- Contact Start -->
-    <div class="container-fluid py-5">
-        <div class="container py-5">
-            <div class="row align-items-center">
-                <div class="col-lg-5 mb-5 mb-lg-0">
-                    <div class="bg-light d-flex flex-column justify-content-center px-5" style="height: 450px;">
-                        <div class="d-flex align-items-center mb-5">
-                            <div class="btn-icon bg-primary mr-4">
-                                <i class="fa fa-2x fa-map-marker-alt text-white"></i>
-                            </div>
-                            <div class="mt-n1">
-                                <h4>Our Location</h4>
-                                <p class="m-0">Jadhavvasti,Near Fulenagar</p>
-                            </div>
-                        </div>
-                        <div class="d-flex align-items-center mb-5">
-                            <div class="btn-icon bg-secondary mr-4">
-                                <i class="fa fa-2x fa-phone-alt text-white"></i>
-                            </div>
-                            <div class="mt-n1">
-                                <h4>Call Us</h4>
-                                <p class="m-0">I. 9923871215 <br>II. 9764375101 <br>III. 9359504003</p>
-                            </div>
-                        </div>
-                        <div class="d-flex align-items-center">
-                            <div class="btn-icon bg-warning mr-4">
-                                <i class="fa fa-2x fa-envelope text-white"></i>
-                            </div>
-                            <div class="mt-n1">
-                                <h4>Email Us</h4>
-                                <p class="m-0">sssspmandal2013@gmail.com</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-7">
-                    <div class="section-title position-relative mb-4">
-                        <div class="map-responsive">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3221.699611871387!2d74.58009382494762!3d18.25243037245593!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc30bcfb7c3abe3%3A0xc410e460f32589a0!2sSssspmandal!5e1!3m2!1sen!2sin!4v1694612607663!5m2!1sen!2sin" 
-                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        </div>
-                      </div>
-                    <div class="contact-form">
-                       
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Contact End -->
-
-
-    <!-- Footer Start -->
-    <div class="container-fluid position-relative overlay-top bg-dark text-white-50 py-5" style="margin-top: 90px;">
-        <div class="container mt-5 pt-5">
-            <div class="row">
-                <div class="col-md-6 mb-5">
-                    <div class="copyrights-message text-white">2023 © <strong>Shree Sant Savta Mali Shikshan Prasarak Mandal Ltd.</strong>
-                        <br> All rights reserved.</div>
-                <a href="tel:9923871215">9923871215</a>
-                <br>
-                <a href="mailto:sssspmandal2013@gmail.com">sssspmandal2013@gmail.com</a>
-            </div>
-                </div>
-                <div class="col-md-6 mb-5">
-                    <div class="w-100">
-                        <div class="input-group">
-                            <div class="input-group-append">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4 mb-5">
-                    <div class="d-flex justify-content-start mt-4">
-                     </div>
-                </div>
-                <div class="col-md-4 mb-5">
-                    <div class="d-flex flex-column justify-content-start">
-                         </div>
-                </div>
-                <div class="col-md-4 mb-5">
-                    <div class="d-flex flex-column justify-content-start">
-                        </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container-fluid bg-dark text-white-50 border-top py-4" style="border-color: rgba(256, 256, 256, .1) !important;">
+    <section id="appeal">
         <div class="container">
-            <div class="row">
-                <div class="col-md-6 text-center text-md-left mb-3 mb-md-0">
-                    </div>
-                <div class="col-md-6 text-center text-md-right">
-                     </div>
+            <h2>Appeal</h2>
+            <p>Dear brothers and sisters, Hello, Sasneh. Shri Sant Sawata Mali Shikshan Prasaran Mandal, Gojubavi, Ta. Baramati,
+                Dist. Pune: The organization wants to set up a rehabilitation centre for the mentally retarded and orphans
+                among the differently-abled in Baramati taluka. There are around 150 adult mentally retarded persons in
+                Baramati taluka. There are around 360 adult mentally retarded persons in Indapur, Daund and Purandar
+                talukas. But there are no rehabilitation centres for their future. For this, our organization intends to
+                rehabilitate them through agriculture projects and various other types of training. The farm project aims to
+                plant all kinds of fruit trees on 4 acres and rehabilitate the children in the following: Children will be
+                given music therapy, exercise therapy, conversation therapy, swimming, running, pranayama and meditation, as
+                well as other artifacts. Through this, the organization strives to bring about a cultural change in these
+                differently-abled children and empower them. In our part, M. Income. D. C. There are many companies. There
+                are also various industrial and NGOs in the taluka. The organization intends to rehabilitate these
+                able-bodied children by providing them with work. However, I request donors like you to participate in this
+                virtuous act and cooperate successfully!</p>
+        </div>
+        <!-- Add more content as needed -->
+    </section>
+
+    <section id="downloads" style="padding: 20px; background-color: #f8f8f8;">
+        <h2 style="color: #333;">Downloads</h2>
+    
+        <div class="download-row">
+            <div class="download-item">
+                <h3>View Trust Proposal</h3>
+                <a href="css/Shri santh sawtamali trust proposal.pdf">View PDF</a>
+            </div>
+    
+            <div class="download-item">
+                <h3>Savtamali Trust Pan</h3>
+                <a href="css/savtamali trust pan.pdf">View PDF</a>
             </div>
         </div>
-    </div>
-    <!-- Footer End -->
+    
+        <div class="download-row">
+            <div class="download-item">
+                <h3>Shree Sant Savtamali F.Certificate</h3>
+                <a href="css/sri..santh sawtamali F.Certificat.pdf">View PDF</a>
+            </div>
+    
+            <div class="download-item">
+                <h3>Shree Sant Savtamali M.Certificate</h3>
+                <a href="css/Sri.santh sawtamali M Certificat.pdf">View PDF</a>
+            </div>
+        </div>
+        <div class="download-row">
+            <div class="download-item">
+                <h3>Trust Deed in Marathi</h3>
+                <a href="css/Trust Deed in Marathi.pdf">View PDF</a>
+            </div>
+    
+            <div class="download-item">
+                <h3>12A</h3>
+                <a href="css/12A.pdf">View PDF</a>
+            </div>
+        </div>
+        <div class="download-row">
+            <div class="download-item">
+                <h3>80G</h3>
+                <a href="css/80G.pdf">View PDF</a>
+            </div>
+        </div>
+    </section>
 
+    <section id="gallery">
+        <div class="desktop_7" unique-script-id="w-w-dm-id">
+            <div class="responsive-container-block bigContainer">
+                <div class="responsive-container-block Container">
+                    <p class="text-blk headingText">Gallery</p>
+                    <div class="responsive-container-block optionsContainer">
+                        <p class="text-blk list all active" data-filter="all">All</p>
+                        <p class="text-blk list" data-filter="two">Bhumipujan</p>
+                        <p class="text-blk list" data-filter="three">Work in progress</p>
+                    </div>
+                    <div class="responsive-container-block imageContainer">
+                        <!-- Your project elements go here -->
+    
+                        <script>
+                            // Define arrays for image paths and categories
+                            var imagePaths = [
+                                "img/1.jpeg", "img/2.jpeg", "img/3.jpeg",
+                                "img/4.jpeg", "img/5.jpeg", "img/6.jpeg",
+                                "img/7.jpeg", "img/8.jpeg",
+                                "img/courses-1.jpg", "img/courses-2.jpg", "img/courses-3.jpg",
+                                "img/courses-4.jpg", "img/courses-5.jpg", "img/courses-6.jpg"
+                            ];
+    
+                            var categories = ["all", "two", "two", "two", "two", "two", "two", "two", "three", "three", "three", "three", "three", "three"];
+    
+                            // Loop through arrays to generate project elements
+                            for (var i = 0; i < imagePaths.length; i++) {
+                                document.write(
+                                    '<div class="project" data-category="' + categories[i] + '">' +
+                                    '<div class="overlay">' +
+                                    '<div class="overlay-inner">' +
+                                    '<button class="close">Close X</button>' +
+                                    '<div class="hdImgs">' +
+                                    '<img alt="" class="againImg" src="' + imagePaths[i] + '">' +
+                                    '</div>' +
+                                    '</div>' +
+                                    '</div>' +
+                                    '<img class="squareImg one" src="' + imagePaths[i] + '">' +
+                                    '<div class="btn-box">' +
+                                    '<button class="btn">View</button>' +
+                                    '</div>' +
+                                    '</div>'
+                                );
+                            }
+                        </script>
+    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary rounded-0 btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
+    <section>
+        <div class="columns">
+            <div class="column">
+                <h1 class="bold">Board of Trustees</h1><br>
+                <b> Mr. Nandkumar Baburao Phule - Working President<br>
+                    Mr. Rahul Ramchandra Jadhav - President<br>
+                    Mr. Machhindra Ramchandra Jadhav-Secretary<br>
+                    Mr. Govind Sopan Lokhande Treasurer<br>
+                    Mrs. Irawati Mohan Satav - Assistant Treasurer<br>
+                    Mr. - Dattu Manik Kadam - Member<br>
+                    Mrs. Ashwini Machhindra Jadhav-Member</b>
+            </div>
+            <div class="column">
+                <div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3221.699611871387!2d74.58009382494762!3d18.25243037245593!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.
+                            1!3m3!1m2!1s0x3bc30bcfb7c3abe3%3A0xc410e460f32589a0!2sSssspmandal!5e1!3m2!1sen!2sin!4v1694612607663!5m2!1sen!2sin" 
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+ 
 
-
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/counterup/counterup.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
+    <section id="contact">
+        <footer class="footer-section">
+            <div class="container">
+                <div class="footer-cta pt-5 pb-5">
+                    <div class="row">
+                        <div class="col-xl-4 col-md-4 mb-30">
+                            <div class="single-cta">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div class="cta-text">
+                                    <h4>Find us</h4>
+                                    <span>Jadhavvasti,Near Fulenagar</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-4 mb-30">
+                            <div class="single-cta">
+                                <i class="fas fa-phone"></i>
+                                <div class="cta-text">
+                                    <h4>Call us</h4>
+                                    <span>I. 9923871215 &nbsp; II. 9764375101 &nbsp; III. 9359504003</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-4 mb-30">
+                            <div class="single-cta">
+                                <i class="far fa-envelope-open"></i>
+                                <div class="cta-text">
+                                    <h4>Mail us</h4>
+                                    <span>sssspmandal2013@gmail.com</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-social-icon">
+                        <span>Follow us</span>
+                        <a href="#" class="mr-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="mr-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="mr-3"><i class="fab fa-google-plus-g"></i></a>
+                        <a href="#" class="mr-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="mr-3"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
+    
+    
 </body>
-
-
 </html>

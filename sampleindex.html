@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            background-color: #007BFF;
+            padding: 10px;
+            color: #fff;
+        }
+
+        header img {
+            width: 80px;
+            height: 80px;
+            margin-right: 10px;
+        }
+
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: #fff;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: #333;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        h2, h3 {
+            color: #007BFF;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .download-row {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .download-item {
+            flex-basis: calc(50% - 10px);
+            margin-bottom: 20px;
+        }
+
+        .download-item h3 {
+            margin-top: 0;
+        }
+
+        .imageContainer {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .project {
+            position: relative;
+            flex-basis: calc(33.33% - 10px);
+            margin-bottom: 20px;
+        }
+
+        .project img {
+            width: 100%;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .project:hover img {
+            transform: scale(1.05);
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(0, 0, 0, 0.7);
+            opacity: 0;
+            transition: opacity 0.3s;
+            border-radius: 8px;
+        }
+
+        .project:hover .overlay {
+            opacity: 1;
+        }
+
+        .overlay-inner {
+            text-align: center;
+            color: #fff;
+        }
+
+        .overlay-inner button {
+            background-color: #fff;
+            color: #333;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 4px;
+            margin-top: 10px;
+        }
+
+        .btn-box {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+        }
+
+        .footer-cta {
+            text-align: center;
+        }
+
+        .single-cta {
+            margin-bottom: 30px;
+        }
+
+        .single-cta i {
+            font-size: 40px;
+            margin-bottom: 10px;
+            color: #007BFF;
+        }
+
+        .cta-text h4 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #fff;
+        }
+
+        .footer-social-icon {
+            margin-top: 20px;
+        }
+
+        .footer-social-icon a {
+            font-size: 24px;
+            margin-right: 15px;
+            color: #fff;
+        }
+
+        .footer-social-icon a:last-child {
+            margin-right: 0;
+        }
+    </style>
+    <!-- Move the favicon link inside the head section -->
+    <link href="favicon.jpg" rel="icon" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <img src="img/favicon.jpg" alt="School Logo">
+        <h1>Shree Sant Savtamali Shikshan Prasarak Mandal</h1>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#appeal">Appeal</a>
+        <a href="#downloads">Downloads</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="home">
+        <img src="img/about.jpg" alt="Welcome Image">
+        <div>
+            <h2>Welcome to Shree Sant Savtamali Shikshan Prasarak Mandal</h2>
+            <p><b>मतिमंद मुलांचे निवाशी पुनर्वसन केंद्र, गोजुबावी ता.बारामती, जि.पुणे </b><br>
+                Join us with Shree Sant Savta Mali Shikshan Prasarak Mandal's journey of compassion and education as we work together to create a brighter future for these special children, allowing them to discover their talents, passions, and dreams while providing them with a sense of love and belonging. Together, we can make a positive difference in the lives of mentally challenged and orphaned students, helping them grow into resilient, empowered, and fulfilled individuals.
+            </p>
+            <!-- Add more content as needed -->
+        </div>
+    </section>
+
+    <section id="appeal" class="container">
+        <h2>Appeal</h2>
+        <p>Dear brothers and sisters, Hello, Sasneh. Shri Sant Sawata Mali Shikshan Prasaran Mandal, Gojubavi, Ta. Baramati,
+            Dist. Pune: The organization wants to set up a rehabilitation centre for the mentally retarded and orphans
+            among the differently-abled in Baramati taluka. There are around 150 adult mentally retarded persons in
+            Baramati taluka. There are around 360 adult mentally retarded persons in Indapur, Daund and Purandar
+            talukas. But there are no rehabilitation centres for their future. For this, our organization intends to
+            rehabilitate them through agriculture projects and various other types of training. The farm project aims to
+            plant all kinds of fruit trees on 4 acres and rehabilitate the children in the following: Children will be
+            given music therapy, exercise therapy, conversation therapy, swimming, running, pranayama and meditation, as
+            well as other artifacts. Through this, the organization strives to bring about a cultural change in these
+            differently-abled children and empower them. In our part, M. Income. D. C. There are many companies. There
+            are also various industrial and NGOs in the taluka. The organization intends to rehabilitate these
+            able-bodied children by providing them with work. However, I request donors like you to participate in this
+            virtuous act and cooperate successfully!
+        </p>
+        <!-- Add more content as needed -->
+    </section>
+
+    <section id="downloads" style="background-color: #f8f8f8;" class="container">
+        <h2 style="color: #333;">Downloads</h2>
+
+        <div class="download-row">
+            <div class="download-item">
+                <h3>View Trust Proposal</h3>
+                <a href="css/Shri santh sawtamali trust proposal.pdf">View PDF</a>
+            </div>
+
+            <div class="download-item">
+                <h3>Savtamali Trust Pan</h3>
+                <a href="css/savtamali trust pan.pdf">View PDF</a>
+            </div>
+        </div>
+
+        <div class="download-row">
+            <div class="download-item">
+                <h3>Shree Sant Savtamali F.Certificate</h3>
+                <a href="css/sri..santh sawtamali F.Certificat.pdf">View PDF</a>
+            </div>
+
+            <div class="download-item">
+                <h3>Shree Sant Savtamali M.Certificate</h3>
+                <a href="css/Sri.santh sawtamali M Certificat.pdf">View PDF</a>
+            </div>
+        </div>
+        <div class="download-row">
+            <div class="download-item">
+                <h3>Trust Deed in Marathi</h3>
+                <a href="css/Trust Deed in Marathi.pdf">View PDF</a>
+            </div>
+
+            <div class="download-item">
+                <h3>12A</h3>
+                <a href="css/12A.pdf">View PDF</a>
+            </div>
+        </div>
+        <div class="download-row">
+            <div class="download-item">
+                <h3>80G</h3>
+                <a href="css/80G.pdf">View PDF</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="container">
+        <div class="responsive-container-block bigContainer">
+            <div class="responsive-container-block Container">
+                <p class="text-blk headingText">Gallery</p>
+                <div class="responsive-container-block optionsContainer">
+                    <p class="text-blk list all active" data-filter="all">All</p>
+                    <p class="text-blk list" data-filter="two">Bhumipujan</p>
+                    <p class="text-blk list" data-filter="three">Work in progress</p>
+                </div>
+                <div class="responsive-container-block imageContainer">
+                    <!-- Your project elements go here -->
+
+                    <div class="project" data-category="all">
+                        <div class="overlay">
+                            <div class="overlay-inner">
+                                <button class="close">Close X</button>
+                                <div class="hdImgs">
+                                    <img alt="" class="againImg" src="img/1.jpeg">
+                                </div>
+                            </div>
+                        </div>
+                        <img class="squareImg one" src="img/1.jpeg">
+                        <div class="btn-box">
+                            <button class="btn">View</button>
+                        </div>
+                    </div>
+
+                    <!-- Repeat this block for each project -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="container">
+        <footer class="footer-section">
+            <div class="footer-cta pt-5 pb-5">
+                <div class="row">
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="cta-text">
+                                <h4>Find us</h4>
+                                <span>Jadhavvasti, Near Fulenagar</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="fas fa-phone"></i>
+                            <div class="cta-text">
+                                <h4>Call us</h4>
+                                <span>I. 9923871215 &nbsp; II. 9764375101 &nbsp; III. 9359504003</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="far fa-envelope-open"></i>
+                            <div class="cta-text">
+                                <h4>Mail us</h4>
+                                <span>sssspmandal2013@gmail.com</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-social-icon">
+                    <span>Follow us</span>
+                    <a href="#" class="mr-3"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="mr-3"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="mr-3"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#" class="mr-3"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="mr-3"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </footer>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
