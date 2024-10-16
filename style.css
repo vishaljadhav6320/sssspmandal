@@ -412,7 +412,7 @@
 
     .columns {
         display: flex;
-        flex-direction: row; /* Stack the divs vertically */
+        flex-direction: column; /* Stack the divs vertically */
         gap: 20px; /* Add space between rows if needed */
     }
     
@@ -620,3 +620,20 @@ textarea {
         margin: 0 8px;
     }
 }
+
+/*vertical div*/
+.container {
+    display: flex;
+    flex-direction: column; /* Stack divs vertically */
+    gap: 20px; /* Space between the divs */
+}
+
+.hero {
+    text-align: center;
+}
+
+.hero-image {
+    width: 100%; /* Adjust the image width as needed */
+    height: auto;
+}
+
