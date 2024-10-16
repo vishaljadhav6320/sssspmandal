@@ -123,59 +123,75 @@
     </section>
 
     <!-- Gallery Section -->
-    <section id="gallery">
-        <h2>Gallery</h2>
-        
-        <div class="responsive-container-block bigContainer">
-            <div class="responsive-container-block Container">
-                <p class="text-blk headingText">Gallery</p>
-                <div class="responsive-container-block optionsContainer">
-                    <p class="text-blk list all active" data-filter="all">All</p>
-                    <p class="text-blk list" data-filter="two">Bhumipujan</p>
-                    <p class="text-blk list" data-filter="four">Inauguration</p>
-                </div>
-                <div class="responsive-container-block imageContainer">
-                    <!-- Dynamically generated project elements -->
-                    <script>
-                        // Define arrays for image paths and categories
-                        var imagePaths = [
-                            "img/1.jpeg", "img/5.jpeg", "img/6.jpeg", "img/9.jpeg", "img/10.jpeg",
-                            "img/11.jpeg", "img/12.jpeg", "img/13.jpeg", "img/14.jpeg", "img/15.jpeg",
-                            "img/16.jpeg", "img/17.jpeg", "img/18.jpeg", "img/19.jpeg", "img/courses-1.jpg",  
-                            "img/courses-5.jpg", "img/courses-6.jpg", "img/a.jpeg", "img/c.jpeg", "img/b.jpeg",
-                            "img/d.jpeg", "img/e.jpeg", "img/f.jpeg", "img/g.jpeg", "img/h.jpeg", "img/i.jpeg",
-                            "img/j.jpeg", "img/7.jpeg", "img/a.png.jpeg", "img/b.png.jpeg", "img/c.png.jpeg",
-                            "img/d.png.jpeg", "img/e.png.jpeg", "img/f.png.jpeg", "img/g.png.jpeg", "img/h.png.jpeg",
-                            "img/i.png.jpeg", "img/j.png.jpeg"
-                        ];
+    <!-- Gallery Section -->
+<section id="gallery">
     
-                        var categories = ["all", "two", "two", "two", "three", "three", "three", "three", "three", 
-                                          "four", "four", "four", "four", "four", "four", "four"];
-    
-                        // Loop through arrays to generate project elements
-                        for (var i = 0; i < imagePaths.length; i++) {
-                            document.write(
-                                '<div class="project" data-category="' + categories[i] + '">' +
-                                '<div class="overlay">' +
-                                '<div class="overlay-inner">' +
-                                '<button class="close">Close X</button>' +
-                                '<div class="hdImgs">' +
-                                '<img alt="" class="againImg" src="' + imagePaths[i] + '">' +
-                                '</div>' +
-                                '</div>' +
-                                '</div>' +
-                                '<img class="squareImg one" src="' + imagePaths[i] + '">' +
-                                '<div class="btn-box">' +
-                                '<button class="btn view-btn">View</button>' +
-                                '</div>' +
-                                '</div>'
-                            );
-                        }
-                    </script>
-                </div>
+    <div class="responsive-container-block bigContainer">
+        <div class="responsive-container-block Container">
+            <p class="text-blk headingText">Gallery</p>
+            <div class="responsive-container-block optionsContainer">
+                <p class="text-blk list all active" data-filter="all">All</p>
+              <!--<p class="text-blk list" data-filter="two">Bhumipujan</p>
+                <p class="text-blk list" data-filter="four">Inauguration</p>-->
+            </div>
+            <div class="responsive-container-block imageContainer">
+                <!-- Dynamically generated project elements -->
+                <script>
+                    // Define arrays for image paths and categories
+                    var imagePaths = [
+                        "img/1.jpeg", "img/5.jpeg", "img/6.jpeg","img/9.jpeg","img/10.jpeg",
+                        "img/11.jpeg","img/12.jpeg","img/13.jpeg","img/14.jpeg","img/15.jpeg",
+                        "img/16.jpeg","img/17.jpeg","img/18.jpeg","img/19.jpeg","img/courses-1.jpg",  
+                        "img/courses-5.jpg", "img/courses-6.jpg", "img/a.jpeg","img/c.jpeg","img/b.jpeg",
+                        "img/d.jpeg","img/e.jpeg","img/f.jpeg","img/g.jpeg","img/h.jpeg","img/i.jpeg",
+                        "img/j.jpeg", "img/7.jpeg", "img/a.png.jpeg","img/b.png.jpeg","img/c.png.jpeg",
+                        "img/d.png.jpeg","img/e.png.jpeg","img/f.png.jpeg", "img/g.png.jpeg","img/h.png.jpeg",
+                        "img/i.png.jpeg","img/j.png.jpeg"
+                    ];
+
+                    var categories = ["all", "two", "two", "two", "three", "three", "three", "three", "three", 
+                                      "four","four","four","four","four","four","four"];
+
+                    // Loop through arrays to generate project elements
+                    for (var i = 0; i < imagePaths.length; i++) {
+                        document.write(
+                            '<div class="project" data-category="' + categories[i] + '">' +
+                            '<img class="squareImg one" src="' + imagePaths[i] + '">' +
+                            '<div class="btn-box">' +
+                            '<button class="btn" onclick="openImage(\'' + imagePaths[i] + '\')">View</button>' +
+                            '</div>' +
+                            '</div>'
+                        );
+                    }
+                </script>
             </div>
         </div>
-    </section>
+    </div>
+    
+    <!-- Fullscreen Image Overlay -->
+    <div id="imageOverlay" class="overlay">
+        <div class="overlay-inner">
+            <button class="close" onclick="closeImage()">Close X</button>
+            <img id="fullImage" alt="Large View">
+        </div>
+    </div>
+</section>
+
+
+
+<!-- JavaScript -->
+<script>
+    // Function to open the image in full screen
+    function openImage(imageSrc) {
+        document.getElementById("fullImage").src = imageSrc;
+        document.getElementById("imageOverlay").style.display = "flex";
+    }
+
+    // Function to close the full screen image view
+    function closeImage() {
+        document.getElementById("imageOverlay").style.display = "none";
+    }
+</script>
 
 
     <section>
