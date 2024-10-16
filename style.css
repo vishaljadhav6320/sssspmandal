@@ -412,7 +412,7 @@
 
     .columns {
         display: flex;
-        flex-direction: column; /* Stack the divs vertically */
+        flex-direction: row; /* Stack the divs vertically */
         gap: 20px; /* Add space between rows if needed */
     }
     
