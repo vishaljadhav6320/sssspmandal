@@ -7,7 +7,14 @@
     <title>Shree Sant Savtamali Shikshan Prasarak Mandal</title>
 
     <style>
-       
+        body { font-family: Arial, sans-serif; display: flex; flex-direction: column; align-items: center; padding: 20px; }
+        .tabs { display: flex; gap: 10px; margin-bottom: 20px; }
+        .tab { padding: 10px 20px; background: #0078FF; color: #fff; cursor: pointer; border: none; border-radius: 5px; }
+        .tab.active { background: #005FCC; }
+        .gallery { display: flex; flex-wrap: wrap; gap: 10px; }
+        .gallery img { width: 150px; height: 100px; cursor: pointer; border-radius: 5px; object-fit: cover; }
+        .fullscreen { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.9); align-items: center; justify-content: center; }
+        .fullscreen img { max-width: 90%; max-height: 90%; border-radius: 10px; }
     </style>
 
     <link rel="stylesheet" href="style.css">
@@ -124,7 +131,7 @@
 
     <!-- Gallery Section -->
     <!-- Gallery Section -->
-<section id="gallery">
+<!--<section id="gallery">
     
     <div class="responsive-container-block bigContainer">
         <div class="responsive-container-block Container">
@@ -132,10 +139,10 @@
             <div class="responsive-container-block optionsContainer">
                 <p class="text-blk list all active" data-filter="all">All</p>
               <!--<p class="text-blk list" data-filter="two">Bhumipujan</p>
-                <p class="text-blk list" data-filter="four">Inauguration</p>-->
+                <p class="text-blk list" data-filter="four">Inauguration</p>
             </div>
             <div class="responsive-container-block imageContainer">
-                <!-- Dynamically generated project elements -->
+                <!-- Dynamically generated project elements 
                 <script>
                     // Define arrays for image paths and categories
                     var imagePaths = [
@@ -166,15 +173,58 @@
                 </script>
             </div>
         </div>
-    </div>
+    </div>-->
     
-    <!-- Fullscreen Image Overlay -->
+    <!-- Fullscreen Image Overlay 
     <div id="imageOverlay" class="overlay">
         <div class="overlay-inner">
             <button class="close" onclick="closeImage()">Close X</button>
             <img id="fullImage" alt="Large View">
         </div>
     </div>
+</section>-->
+<section id="gallery">
+    <div class="tabs">
+        <button class="tab active" onclick="filterImages('all')">All</button>
+        <button class="tab" onclick="filterImages('activity')">Activity</button>
+    </div>
+
+    <div class="gallery" id="gallery">
+        <img src=""img/1.jpeg"" class="all activity" onclick="showFullscreen(this)">
+        <img src="img/5.jpeg"" class="all" onclick="showFullscreen(this)">
+        <img src=""img/6.jpeg"" class="all activity" onclick="showFullscreen(this)">
+        <img src=""img/9.jpeg"" class="all" onclick="showFullscreen(this)">
+    </div>
+
+    <div class="fullscreen" id="fullscreen" onclick="hideFullscreen()">
+        <img id="fullscreenImage">
+    </div>
+
+    <script>
+        function filterImages(category) {
+            const images = document.querySelectorAll('.gallery img');
+            images.forEach(img => {
+                img.style.display = img.classList.contains(category) ? 'block' : 'none';
+                if (category === 'all') img.style.display = 'block';
+            });
+
+            document.querySelectorAll('.tab').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            event.target.classList.add('active');
+        }
+
+        function showFullscreen(imgElement) {
+            const fullscreen = document.getElementById('fullscreen');
+            const fullscreenImage = document.getElementById('fullscreenImage');
+            fullscreenImage.src = imgElement.src;
+            fullscreen.style.display = 'flex';
+        }
+
+        function hideFullscreen() {
+            document.getElementById('fullscreen').style.display = 'none';
+        }
+    </script>
 </section>
 
 
