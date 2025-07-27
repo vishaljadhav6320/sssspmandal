@@ -175,7 +175,7 @@
                 <div class="imageContainer" id="imageContainer"></div>
 
 <script>
-    // Define an array of image objects with their respective categories
+    // Define an array of media objects (images and videos)
     const images = [
         { src: "img/16.jpeg", category: "all" },
         { src: "img/b.jpeg", category: "one"  },
@@ -208,20 +208,31 @@
         { src: "img/act2.jpeg", category: "five"  },
         { src: "img/act3.jpeg", category: "five"  },
         { src: "img/act4.jpeg", category: "five"  },
-        // Add more images here as needed
+
+        // 🎥 Add local videos here
+        { src: "videos/activity1.mp4", category: "five", type: "video" },
+        { src: "videos/activity2.mp4", category: "five", type: "video" },
     ];
 
-    // Get the container element
     const imageContainer = document.getElementById("imageContainer");
 
-    // Loop through the array and create image elements dynamically
-    images.forEach(image => {
-        const imgElement = document.createElement("img");
-        imgElement.src = image.src;
-        imgElement.classList.add("image", image.category);
-        imageContainer.appendChild(imgElement);
+    images.forEach(media => {
+        let element;
+        if (media.type === "video") {
+            element = document.createElement("video");
+            element.src = media.src;
+            element.controls = true;
+            element.width = 300;
+        } else {
+            element = document.createElement("img");
+            element.src = media.src;
+            element.onclick = () => openImage(media.src);
+        }
+        element.classList.add("image", media.category);
+        imageContainer.appendChild(element);
     });
 </script>
+
 
     
         <!-- Fullscreen Image Overlay -->
